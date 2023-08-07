@@ -26,7 +26,8 @@ test('renders learn react link', () => {
 - toBeChecked()
   ...
 
-**assertions of jest**
+**reference**
+https://testing-library.com/docs/react-testing-library/cheatsheet/
 https://github.com/testing-library/jest-dom
 
 ### Types of Tests
