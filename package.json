@@ -1,0 +1,26 @@
+{
+  "name": "11-jest",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "RTL/*"
+  ],
+  "scripts": {
+    "dev:color-button": "npm run start --workspace @RTL/01-color-button",
+    "dev:sundaes-on-demand": "npm run start --workspace @RTL/02-sundaes-on-demand",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joeun",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "eslint-plugin-jest-dom": "^5.0.2",
+    "eslint-plugin-testing-library": "^5.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  }
+}
