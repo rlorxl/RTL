@@ -4,6 +4,12 @@
     "react-app",
     "react-app/jest",
     "plugin:testing-library/react",
-    "plugin:jest-dom/recommended"
-  ]
+    "plugin:jest-dom/recommended",
+    "plugin:vitest/recommended"
+  ],
+  "rules": {
+    "no-unused-vars": "warn", // warning, not error
+    "vitest/expect-expect": "off", // eliminate distracting red squiggles while writing tests
+    "react/prop-types": "off" // turn off props validation
+  }
 }
