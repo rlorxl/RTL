@@ -15,7 +15,7 @@ export default defineConfig({
   },
   server: {
     // to match sundae server expectation
-    port: 3000,
+    port: 5173,
     // exit if port 3000 is in use (to avoid CORS errors)
     strict: true,
   },
