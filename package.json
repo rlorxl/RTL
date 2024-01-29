@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "dev:color-button": "npm run start --workspace @RTL/01-color-button",
-    "dev:sundaes-on-demand": "npm run start --workspace @RTL/02-sundaes-on-demand",
+    "dev:sundaes-on-demand": "npm run dev --workspace @RTL/02-sundaes-on-demand",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "joeun",

@@ -1,4 +1,4 @@
-## Sundae App
+# Sundae App
 
 ## eslint설정
 
