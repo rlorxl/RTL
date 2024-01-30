@@ -72,8 +72,8 @@ test('checkbox enables button on first click and disables on second click', asyn
 
 쿼리들은 테스팅 라이브러리에서 페이지의 요소를 찾는것을 제공하는 방법이다. 여러타입의 쿼리가 있는데 ('get','find', 'query') 이들은 요소가 존재하지 않거나, 프로미스를 반환하고 재시도를 할 때 에러가 나는지의 여부에 차이가 있다.
 
-### command
-
-- get: DOM안에 있는 요소
-- query: DOM안에 있지 않은 요소
-- find: 비동기적으로 업데이트되는 요소
+| command |              desc              |
+| :-----: | :----------------------------: |
+|   get   |       DOM안에 있는 요소        |
+|  query  |     DOM안에 있지 않은 요소     |
+|  find   | 비동기적으로 업데이트되는 요소 |
