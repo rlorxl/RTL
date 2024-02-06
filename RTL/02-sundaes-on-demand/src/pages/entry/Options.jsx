@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Row from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
 import ScoopOption from './ScoopOption';
 
 const Options = ({ optionType }) => {
