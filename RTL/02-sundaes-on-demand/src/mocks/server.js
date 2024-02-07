@@ -1,5 +1,5 @@
 import { setupServer } from 'msw/node';
 import { handlers } from './handlers';
-import { optionType } from '../pages/entry/constants/option';
+import { optionType } from '../constants/option';
 
-export const server = setupServer(...handlers(optionType.TOPPINGS));
+export const server = setupServer(...handlers(optionType.SCOOPS));

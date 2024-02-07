@@ -1,9 +1,9 @@
-export const optionType = {
+const optionType = {
   SCOOPS: 'scoops',
   TOPPINGS: 'toppings',
 };
 
-export const optionResponse = {
+const optionResponse = {
   scoops: [
     { name: 'Chocolate', imagePath: '/images/chocolate.png' },
     { name: 'Vanilla', imagePath: '/images/vanilla.png' },
@@ -14,3 +14,5 @@ export const optionResponse = {
     { name: 'Hot Fudge', imagePath: '/images/hot-fudge.png' },
   ],
 };
+
+export { optionResponse, optionType };
