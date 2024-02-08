@@ -28,3 +28,29 @@ test('update scoop subtotal when scoops change', async () => {
   await user.type(chocolateInput, '2');
   expect(scoopsSubtotal).toHaveTextContent('6.00');
 });
+
+test('update toppings subtotal when toppings change', async () => {
+  const user = userEvent.setup();
+  render(<Options optionType='toppings' />);
+
+  // 총금액 합계가 $0.00에서 시작하는지 확인
+  const toppingsTotal = screen.getByText('Toppings total: $', { exact: false });
+  expect(toppingsTotal).toHaveTextContent('0.00');
+
+  // cherriess 추가 후, subtotal 확인
+  const cherriesCheckbox = await screen.findByRole('checkbox', {
+    name: 'Cherries',
+  });
+
+  await user.click(cherriesCheckbox);
+  expect(toppingsTotal).toHaveTextContent('1.50');
+
+  // hot fudge 추가 후, subtotal 확인
+  const hotFudgeCheckbox = screen.getByRole('checkbox', { name: 'Hot fudge' });
+  await user.click(hotFudgeCheckbox);
+  expect(toppingsTotal).toHaveTextContent('3.00');
+
+  // hot fudge 제거 후 subtotal 확인
+  await user.click(hotFudgeCheckbox);
+  expect(toppingsTotal).toHaveTextContent('1.50');
+});

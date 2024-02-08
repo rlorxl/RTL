@@ -1,14 +1,13 @@
 import React from 'react';
 
-import { Col } from 'react-bootstrap/Col';
-import { Form } from 'react-bootstrap/Form';
-import { Row } from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
 
 import { useOrderDetails } from '../../context/OrderDetails';
 
 const ScoopOption = ({ name, imagePath }) => {
   const { updateItemCount } = useOrderDetails();
-
   const handleChange = (e) =>
     updateItemCount(name, parseInt(e.target.value), 'scoops');
 
@@ -19,7 +18,11 @@ const ScoopOption = ({ name, imagePath }) => {
         src={`http://localhost:3030/${imagePath}`}
         alt={`${name} scoop`}
       />
-      <Form controlId={`${name}-count`} as={Row} style={{ marginTop: '10px' }}>
+      <Form.Group
+        controlId={`${name}-count`}
+        as={Row}
+        style={{ marginTop: '10px' }}
+      >
         <Form.Label column xs='6' style={{ textAlign: 'right' }}>
           {name}
         </Form.Label>
@@ -30,7 +33,7 @@ const ScoopOption = ({ name, imagePath }) => {
             onChange={handleChange}
           />
         </Col>
-      </Form>
+      </Form.Group>
     </Col>
   );
 };

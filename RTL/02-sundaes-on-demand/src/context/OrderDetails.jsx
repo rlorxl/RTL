@@ -26,11 +26,6 @@ export function OrderDetailsProvider(props) {
     const newOptionCounts = { ...optionCounts };
     newOptionCounts[optionType][itemName] = newItemCount;
     setOptionCounts(newOptionCounts);
-    // setOptionCounts((prev) => {
-    //   prev[optionType] === optionType
-    //     ? (prev[optionType][itemName] = newItemCount)
-    //     : prev;
-    // });
   };
 
   const resetOrder = () => {
