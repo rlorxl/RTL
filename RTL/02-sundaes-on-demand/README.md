@@ -77,3 +77,31 @@ test('checkbox enables button on first click and disables on second click', asyn
 |   get   |       DOM안에 있는 요소        |
 |  query  |     DOM안에 있지 않은 요소     |
 |  find   | 비동기적으로 업데이트되는 요소 |
+
+## Provider로 래핑된 컴포넌트 테스트
+
+**컴포넌트 하나당 래퍼를 설정하기**
+
+```jsx
+import { OrderDetailsProvider } from '../../../context/OrderDetails';
+
+render(<Options optionType='scoops' />, { wrapper: OrderDetailsProvider });
+```
+
+**모든 컴포넌트에 전역으로 래퍼 설정하기** => [react-testing-library/setup](https://testing-library.com/docs/react-testing-library/setup)
+
+custom render설정
+
+```jsx
+const customRender = (ui, options) =>
+  render(ui, { wrapper: AllTheProviders, ...options });
+
+// re-export everything
+export * from '@testing-library/react';
+
+// override render method
+export { customRender as render };
+```
+
+`@testing-library/react`에서 import하던 `render`를 커스텀 render로 재정의한다. 필요한 모든 테스트 각각에 wrapper옵션을 사용하지 않고 Provider에 접근할 수 있도록 커스텀.
+[Options.test.jsx 1~2lines]()

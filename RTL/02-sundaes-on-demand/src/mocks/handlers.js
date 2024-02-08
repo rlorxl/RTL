@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw';
-import { optionResponse } from '../pages/entry/constants/option';
+import { optionResponse } from '../constants/option';
 
 class OptionHandler {
   constructor(option) {

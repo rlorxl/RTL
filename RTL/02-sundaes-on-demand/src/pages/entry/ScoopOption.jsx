@@ -19,11 +19,7 @@ const ScoopOption = ({ name, imagePath }) => {
         src={`http://localhost:3030/${imagePath}`}
         alt={`${name} scoop`}
       />
-      <Form.Group
-        controlId={`${name}-count`}
-        as={Row}
-        style={{ marginTop: '10px' }}
-      >
+      <Form controlId={`${name}-count`} as={Row} style={{ marginTop: '10px' }}>
         <Form.Label column xs='6' style={{ textAlign: 'right' }}>
           {name}
         </Form.Label>
@@ -34,7 +30,7 @@ const ScoopOption = ({ name, imagePath }) => {
             onChange={handleChange}
           />
         </Col>
-      </Form.Group>
+      </Form>
     </Col>
   );
 };
