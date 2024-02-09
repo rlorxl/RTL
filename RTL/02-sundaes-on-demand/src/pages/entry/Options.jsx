@@ -19,13 +19,19 @@ const Options = ({ optionType }) => {
 
   // optionType is 'scoops' or 'toppings'
   useEffect(() => {
+    const controller = new AbortController();
     axios
-      .get(`http://localhost:3030/${optionType}`)
+      .get(`http://localhost:3030/${optionType}`, { signal: controller.signal })
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         setItems(response.data);
       })
       .catch((error) => setError(true));
+
+    // 컴포넌트 언마운트시 axios호출 중단 설정.
+    return () => {
+      controller.abort();
+    };
   }, [optionType]);
 
   const ItemComponent = optionType === 'scoops' ? ScoopOption : ToppingOption;
