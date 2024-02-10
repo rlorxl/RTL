@@ -6,7 +6,7 @@ import { useOrderDetails } from '../../context/OrderDetails';
 import { formatCurrency } from '../../utilities';
 import { optionType } from '../../constants/option';
 
-const OrderSummary = () => {
+const OrderSummary = ({ setOrderPhase }) => {
   const { totals, optionCounts } = useOrderDetails();
 
   const scoopArray = Object.entries(optionCounts[optionType.SCOOPS]); // [["chocolate", 2], ["vanilla", 1]]
@@ -14,7 +14,7 @@ const OrderSummary = () => {
 
   return (
     <div>
-      <h1>OrderSummary</h1>
+      <h1>Order Summary</h1>
       <h2>Scoops: {formatCurrency(totals[optionType.SCOOPS])}</h2>
       <ul>
         {scoopArray.map(([name, value]) => (
@@ -29,7 +29,7 @@ const OrderSummary = () => {
           <li key={topping}>{topping}</li>
         ))}
       </ul>
-      <SummaryForm />
+      <SummaryForm setOrderPhase={setOrderPhase} />
     </div>
   );
 };
