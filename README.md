@@ -1,6 +1,6 @@
 # React Testing Library
 
-### 새 테스트를 작성할 때 고려할 점
+## 새 테스트를 작성할 때 고려할 점
 
 **1. 무엇을 렌더할 것인지?**
 
@@ -19,7 +19,7 @@
 - await를 써야 하는 쿼리가 있는지.
 - 컴포넌트 내에 비동기 동작이 있는지.
 
-### 링크
+## 링크
 
 - [React Test: 테스트의 기본](https://github.com/rlorxl/RTL/blob/main/RTL/01-color-button/README.md)
 
