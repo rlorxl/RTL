@@ -37,8 +37,8 @@
 - [서버요청 테스트](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/OrderEntry.test.jsx)
 - [happy path 테스트](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/tests/orderPhase.test.jsx)
 - 컴포넌트 unmount를 트리거하여 axios요청 중단
-  - [테스트 코드 62 line](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/TotalUpdates.test.jsxhttps://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/TotalUpdates.test.jsx)
-  - [컴포넌트 코드 31 line](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/Options.jsx)
+  - [TotalUpdates.test 62 line](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/TotalUpdates.test.jsx)
+  - [Options 31 line](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/Options.jsx)
  
 ### Common mistakes with React Testing Library
 https://seongry.github.io/2021/06-20-common-mistakes-with-rty/
