@@ -104,4 +104,4 @@ export { customRender as render };
 ```
 
 `@testing-library/react`에서 import하던 `render`를 커스텀 render로 재정의한다. 필요한 모든 테스트 각각에 wrapper옵션을 사용하지 않고 Provider에 접근할 수 있도록 커스텀.
-[Options.test.jsx 1~2lines]()
+[Options.test.jsx 1~2lines](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/Options.test.jsx)
