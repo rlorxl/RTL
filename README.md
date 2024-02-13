@@ -21,21 +21,24 @@
 
 ### 링크
 
-- [React Test: 테스트의 기본]()
+- [React Test: 테스트의 기본](https://github.com/rlorxl/RTL/blob/main/RTL/01-color-button/README.md)
 
-  - [테스트 추가하기 (add)]()
-  - [describe & it / 비동기 테스트]()
-  - [calculator test]()
-  - [유저 인스턴스(user event)]()
-  - [queries]()
-  - [initial conditions 셋업]()
+  - [테스트 추가하기 (add)](https://github.com/rlorxl/RTL/blob/main/RTL/unit-basic/src/basic/test/add.test.js)
+  - [describe & it / 비동기 테스트](https://github.com/rlorxl/RTL/blob/main/RTL/unit-basic/src/basic/test/async.test.js)
+  - [calculator test](https://github.com/rlorxl/RTL/blob/main/RTL/unit-basic/src/basic/test/calculator.test.js)
+  - [유저 인스턴스(user event)](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/README.md#user-event)
+  - [queries](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/README.md#queries)
+  - [initial conditions 셋업](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/summary/test/SummaryForm.test.jsx)
 
-- [Provider로 래핑된 컴포넌트 테스트]()
+- [Provider로 래핑된 컴포넌트 테스트](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/README.md#provider%EB%A1%9C-%EB%9E%98%ED%95%91%EB%90%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%85%8C%EC%8A%A4%ED%8A%B8)
 
-  - [커스텀 래퍼 코드]()
+  - [커스텀 래퍼 코드](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/test-utils/testing-library-utils.jsx)
 
-- [서버요청 테스트]()
-- [happy path 테스트]()
+- [서버요청 테스트](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/OrderEntry.test.jsx)
+- [happy path 테스트](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/tests/orderPhase.test.jsx)
 - 컴포넌트 unmount를 트리거하여 axios요청 중단
-  - [테스트 코드 62 line]()
-  - [컴포넌트 코드 31 line]()
+  - [테스트 코드 62 line](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/TotalUpdates.test.jsxhttps://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/tests/TotalUpdates.test.jsx)
+  - [컴포넌트 코드 31 line](https://github.com/rlorxl/RTL/blob/main/RTL/02-sundaes-on-demand/src/pages/entry/Options.jsx)
+ 
+### [🔗 Common mistakes with React Testing Library](https://seongry.github.io/2021/06-20-common-mistakes-with-rty/)
+
