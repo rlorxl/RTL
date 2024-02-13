@@ -66,4 +66,4 @@ test('button has correct initial color, and updates when clicked', () => {
 });
 ```
 
-코드:[5~20lines]()
+코드:[5~20lines](https://github.com/rlorxl/RTL/blob/main/RTL/01-color-button/src/App.test.js)
